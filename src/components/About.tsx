@@ -29,7 +29,7 @@ export default function About() {
           <div className="relative">
             <div className="relative rounded-2xl overflow-hidden aspect-[4/3] group">
               <img
-                src="https://images.pexels.com/photos/7045409/pexels-photo-7045409.jpeg?auto=compress&cs=tinysrgb&w=900&q=80"
+                src="/wpt.png"
                 alt="WPT Wales training session"
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 loading="lazy"
