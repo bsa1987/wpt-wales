@@ -64,7 +64,9 @@
   }
 
   .card-hover {
-    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+    transition: transform 0.3s ease,
+                box-shadow 0.3s ease,
+                border-color 0.3s ease;
   }
 
   .card-hover:hover {
@@ -74,23 +76,33 @@
   }
 }
 
-/* Scrollbar */
+/* ==========================================
+   Scrollbar
+========================================== */
+
 ::-webkit-scrollbar {
   width: 6px;
 }
+
 ::-webkit-scrollbar-track {
   background: #111111;
 }
+
 ::-webkit-scrollbar-thumb {
   background: #C1121F;
   border-radius: 3px;
 }
 
-/* Intersection observer fade animations */
+/* ==========================================
+   Fade Animations
+========================================== */
+
 .fade-in-section {
   opacity: 0;
   transform: translateY(24px);
-  transition: opacity 0.7s ease, transform 0.7s ease;
+  transition:
+    opacity 0.7s ease,
+    transform 0.7s ease;
 }
 
 .fade-in-section.visible {
@@ -98,7 +110,34 @@
   transform: translateY(0);
 }
 
-/* Gallery scroll pause on hover */
-.gallery-track:hover {
+/* ==========================================
+   Photo Strip Marquee
+========================================== */
+
+.marquee {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+}
+
+.marquee-track {
+  display: flex;
+  gap: 1.5rem;
+  width: max-content;
+  animation: marquee 45s linear infinite;
+  will-change: transform;
+}
+
+.marquee:hover .marquee-track {
   animation-play-state: paused;
+}
+
+@keyframes marquee {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(calc(-50% - 0.75rem));
+  }
 }
