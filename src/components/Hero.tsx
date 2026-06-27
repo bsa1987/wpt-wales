@@ -28,12 +28,7 @@ export default function Hero() {
       <div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-[#C1121F] to-transparent z-10" />
 
       {/* Content */}
-      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-20">
-        {/* Badge */}
-        <div className="inline-flex items-center gap-2 bg-[#C1121F]/20 border border-[#C1121F]/40 rounded-full px-4 py-1.5 mb-6 backdrop-blur-sm animate-fade-in">
-          <span className="w-2 h-2 rounded-full bg-[#C1121F] animate-pulse-slow" />
-          <span className="text-white/90 text-sm font-medium tracking-widest uppercase">Swansea's Premier Muay Thai Academy</span>
-        </div>
+<div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-20">
 
         {/* Headline */}
         <h1 className="font-heading text-6xl sm:text-7xl md:text-8xl lg:text-9xl text-white leading-none tracking-widest text-shadow-lg mb-6 animate-fade-up">
