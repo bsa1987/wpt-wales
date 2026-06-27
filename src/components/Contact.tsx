@@ -139,18 +139,18 @@ export default function Contact() {
             </div>
 
             {/* Map */}
-            <div className="rounded-2xl overflow-hidden border border-white/5 aspect-video">
-              <iframe
-                title="WPT Wales location map"
-                width="100%"
-                height="100%"
-                style={{ border: 0, filter: 'invert(90%) hue-rotate(180deg)' }}
-                loading="lazy"
-                allowFullScreen
-                referrerPolicy="no-referrer-when-downgrade"
-                src="https://www.google.com/maps?q=Weavers+Yard,+Approach+Road,+Manselton,+Swansea+SA5+8NL&output=embed"
-              />
-            </div>
+<div className="rounded-2xl overflow-hidden border border-white/5 aspect-video">
+  <iframe
+    title="WPT Wales Location"
+    width="100%"
+    height="100%"
+    style={{ border: 0 }}
+    loading="lazy"
+    allowFullScreen
+    referrerPolicy="no-referrer-when-downgrade"
+    src="https://maps.google.com/maps?q=51.6361973788519,-3.9513783432164318&z=19&output=embed"
+  />
+</div>
           </div>
 
           {/* Right – Form */}
