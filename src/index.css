@@ -140,27 +140,32 @@
   to {
     transform: translateX(calc(-50% - 0.75rem));
   }
+}
 
-  /* Premium glowing WPT initials */
+/* ==========================================
+   Premium WPT Initial Glow
+========================================== */
+
 @keyframes shine {
   0%,
   100% {
+    color: #c1121f;
     transform: scale(1);
-    color: #C1121F;
     text-shadow:
       0 0 6px rgba(255,40,40,.6),
       0 0 14px rgba(255,40,40,.6),
-      0 0 28px rgba(255,40,40,.4);
+      0 0 24px rgba(255,40,40,.4);
   }
 
   50% {
-    transform: scale(1.12);
     color: #ff3b3b;
+    transform: scale(1.12);
     text-shadow:
       0 0 10px #fff,
-      0 0 20px #ff5a5a,
-      0 0 40px #ff2d2d,
-      0 0 70px rgba(255,0,0,.9);
+      0 0 18px #fff,
+      0 0 30px #ff5555,
+      0 0 55px #ff2d2d,
+      0 0 90px rgba(255,0,0,.95);
   }
 }
 
@@ -170,15 +175,14 @@
   animation:shine 2.8s ease-in-out infinite;
 }
 
-.wpt-letter:nth-of-type(1){
+.wpt-letter:nth-child(1){
   animation-delay:0s;
 }
 
-.wpt-letter:nth-of-type(2){
+.wpt-letter:nth-child(2){
   animation-delay:.45s;
 }
 
-.wpt-letter:nth-of-type(3){
+.wpt-letter:nth-child(3){
   animation-delay:.9s;
-}
 }
