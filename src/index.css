@@ -140,4 +140,45 @@
   to {
     transform: translateX(calc(-50% - 0.75rem));
   }
+
+  /* Premium glowing WPT initials */
+@keyframes shine {
+  0%,
+  100% {
+    transform: scale(1);
+    color: #C1121F;
+    text-shadow:
+      0 0 6px rgba(255,40,40,.6),
+      0 0 14px rgba(255,40,40,.6),
+      0 0 28px rgba(255,40,40,.4);
+  }
+
+  50% {
+    transform: scale(1.12);
+    color: #ff3b3b;
+    text-shadow:
+      0 0 10px #fff,
+      0 0 20px #ff5a5a,
+      0 0 40px #ff2d2d,
+      0 0 70px rgba(255,0,0,.9);
+  }
+}
+
+.wpt-letter{
+  display:inline-block;
+  margin-right:4px;
+  animation:shine 2.8s ease-in-out infinite;
+}
+
+.wpt-letter:nth-of-type(1){
+  animation-delay:0s;
+}
+
+.wpt-letter:nth-of-type(2){
+  animation-delay:.45s;
+}
+
+.wpt-letter:nth-of-type(3){
+  animation-delay:.9s;
+}
 }
