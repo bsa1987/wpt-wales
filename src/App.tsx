@@ -4,7 +4,6 @@ import Nav from './components/Nav'
 import Hero from './components/Hero'
 import PhotoStrip from './PhotoStrip'
 import About from './components/About'
-import WhyChoose from './components/WhyChoose'
 import Classes from './components/Classes'
 import Timetable from './components/Timetable'
 import Coaches from './components/Coaches'
@@ -25,8 +24,6 @@ export default function App() {
         <PhotoStrip />
 
         <About />
-
-        <WhyChoose />
 
         <Classes />
 
