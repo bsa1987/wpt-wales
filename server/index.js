@@ -38,7 +38,7 @@ app.post('/api/enquiry', async (req, res) => {
 
   try {
     await resend.emails.send({
-      from: 'WPT Wales Enquiries <noreply@wptwales.co.uk>',
+      from: 'WPT Wales Enquiries <onboarding@resend.dev>',
       to: OWNER_EMAIL,
       replyTo: email,
       subject: `New Enquiry: ${service} – ${name}`,
@@ -63,7 +63,7 @@ app.post('/api/enquiry', async (req, res) => {
     })
 
     await resend.emails.send({
-      from: 'WPT Wales <noreply@wptwales.co.uk>',
+      from: 'WPT Wales <onboarding@resend.dev>',
       to: email,
       subject: 'Thanks for your enquiry – WPT Wales',
       html: `
