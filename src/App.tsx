@@ -1,11 +1,12 @@
 import './index.css'
+
 import Nav from './components/Nav'
 import Hero from './components/Hero'
+import PhotoStrip from './components/PhotoStrip'
 import About from './components/About'
 import WhyChoose from './components/WhyChoose'
 import Classes from './components/Classes'
 import Timetable from './components/Timetable'
-import Gallery from './components/Gallery'
 import Coaches from './components/Coaches'
 import Reviews from './components/Reviews'
 import Contact from './components/Contact'
@@ -16,18 +17,30 @@ export default function App() {
   return (
     <>
       <Nav />
+
       <main>
         <Hero />
+
+        {/* Moving Photo Strip */}
+        <PhotoStrip />
+
         <About />
+
         <WhyChoose />
+
         <Classes />
+
         <Timetable />
-        <Gallery />
+
         <Coaches />
+
         <Reviews />
+
         <Contact />
       </main>
+
       <Footer />
+
       <FloatingButtons />
     </>
   )
