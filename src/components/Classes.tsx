@@ -42,139 +42,43 @@ function ClassCard({ name, ages, days, time, description, image, badge, refProp,
       </div>
 
       {/* Content */}
-<div className="p-6 flex flex-col flex-1">
-  {ages && (
-    <span className="text-[#D4AF37] text-xs font-medium uppercase tracking-widest mb-1">
-      Ages {ages}
-    </span>
-  )}
+      <div className="p-6 flex flex-col flex-1">
+        {ages && (
+          <span className="text-[#D4AF37] text-xs font-medium uppercase tracking-widest mb-1">Ages {ages}</span>
+        )}
+        <h3 className="font-heading text-2xl sm:text-3xl text-white tracking-widest mb-3">{name}</h3>
 
-  <h3 className="font-heading text-2xl sm:text-3xl text-white tracking-widest mb-3">
-    {name}
-  </h3>
+        <div className="flex flex-wrap gap-3 mb-4">
+          <div className="flex items-center gap-2 text-white/60 text-sm">
+            <svg className="w-4 h-4 text-[#C1121F]" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+            </svg>
+            <span>{days}</span>
+          </div>
+          <div className="flex items-center gap-2 text-white/60 text-sm">
+            <svg className="w-4 h-4 text-[#C1121F]" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+            </svg>
+            <span>{time}</span>
+          </div>
+        </div>
 
-  <div className="flex flex-wrap gap-3 mb-5">
-    <div className="flex items-center gap-2 text-white/80 text-sm">
-      <svg
-        className="w-4 h-4 text-[#C1121F]"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"
-        />
-      </svg>
-      <span>{days}</span>
+        <p
+  className="text-white/60 text-sm leading-relaxed mb-6 flex-1 whitespace-pre-line"
+>
+  {description}
+</p>
+
+        <button
+          onClick={scrollToContact}
+          className="w-full bg-transparent border border-[#C1121F]/50 text-[#C1121F] hover:bg-[#C1121F] hover:text-white font-heading text-lg tracking-widest py-3 rounded-xl transition-all duration-200 group-hover:border-[#C1121F] group-hover:bg-[#C1121F] group-hover:text-white"
+        >
+          ENQUIRE
+        </button>
+      </div>
     </div>
-
-    <div className="flex items-center gap-2 text-white/80 text-sm">
-      <svg
-        className="w-4 h-4 text-[#C1121F]"
-        fill="none"
-        stroke="currentColor"
-        viewBox="0 0 24 24"
-      >
-        <path
-          strokeLinecap="round"
-          strokeLinejoin="round"
-          strokeWidth={2}
-          d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"
-        />
-      </svg>
-      <span>{time}</span>
-    </div>
-  </div>
-
-  {name === 'Children & Adults Muay Thai' ? (
-    <div className="flex-1 space-y-4 mb-6">
-
-      <div className="border-l-4 border-[#D4AF37] pl-4">
-        <p className="text-[#D4AF37] font-heading text-xl tracking-wider">
-          AGE 4–7
-        </p>
-        <p className="text-white font-semibold">
-          5:30pm – 6:15pm
-        </p>
-        <p className="text-[#C1121F] font-bold text-lg">
-          £4.50
-          <span className="text-white/80 text-sm font-normal">
-            {" "}per class
-          </span>
-        </p>
-        <p className="text-white/80">
-          or
-          <span className="text-[#D4AF37] font-semibold">
-            {" "}£30 monthly
-          </span>
-        </p>
-      </div>
-
-      <div className="border-l-4 border-[#D4AF37] pl-4">
-        <p className="text-[#D4AF37] font-heading text-xl tracking-wider">
-          AGE 8–14
-        </p>
-        <p className="text-white font-semibold">
-          6:15pm – 7:15pm
-        </p>
-        <p className="text-[#C1121F] font-bold text-lg">
-          £4.50
-          <span className="text-white/80 text-sm font-normal">
-            {" "}per class
-          </span>
-        </p>
-        <p className="text-white/80">
-          or
-          <span className="text-[#D4AF37] font-semibold">
-            {" "}£30 monthly
-          </span>
-        </p>
-      </div>
-
-      <div className="border-l-4 border-[#D4AF37] pl-4">
-        <p className="text-[#D4AF37] font-heading text-xl tracking-wider">
-          ADULTS
-        </p>
-        <p className="text-white font-semibold">
-          7:15pm – 8:30pm
-        </p>
-        <p className="text-[#C1121F] font-bold text-lg">
-          £5.50
-          <span className="text-white/80 text-sm font-normal">
-            {" "}per class
-          </span>
-        </p>
-        <p className="text-white/80">
-          or
-          <span className="text-[#D4AF37] font-semibold">
-            {" "}£40 monthly
-          </span>
-        </p>
-      </div>
-
-      <div className="bg-[#111111] border border-[#D4AF37]/30 rounded-xl p-3">
-        <p className="text-white font-medium">
-          🥊 Private fighters training available by appointment.
-        </p>
-      </div>
-
-    </div>
-  ) : (
-    <p className="text-white/80 leading-relaxed mb-6 flex-1">
-      {description}
-    </p>
-  )}
-
-  <button
-    onClick={scrollToContact}
-    className="w-full bg-transparent border border-[#C1121F]/50 text-[#C1121F] hover:bg-[#C1121F] hover:text-white font-heading text-lg tracking-widest py-3 rounded-xl transition-all duration-200"
-  >
-    ENQUIRE
-  </button>
-</div>
+  )
+}
 
 const CLASSES = [
   {
