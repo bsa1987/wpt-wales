@@ -28,12 +28,47 @@ export default function Hero() {
 
         {/* Headline */}
         <h1 className="font-heading text-6xl sm:text-7xl md:text-8xl lg:text-9xl text-white leading-none tracking-widest text-shadow-lg mb-6 animate-fade-up">
-          <span className="text-[#C1121F]">W</span>ORK.
-          <br />
-          <span className="text-[#C1121F]">P</span>ROGRESS.
-          <br />
-          <span className="text-[#C1121F]">T</span>RANSFORM.
-        </h1>
+
+  <span
+    className="text-[#C1121F] inline-block animate-pulse"
+    style={{
+      textShadow:
+        "0 0 8px #ff2d2d, 0 0 18px #ff2d2d, 0 0 40px rgba(255,0,0,.7)",
+    }}
+  >
+    W
+  </span>
+  ORK.
+
+  <br />
+
+  <span
+    className="text-[#C1121F] inline-block animate-pulse"
+    style={{
+      animationDelay: ".3s",
+      textShadow:
+        "0 0 8px #ff2d2d, 0 0 18px #ff2d2d, 0 0 40px rgba(255,0,0,.7)",
+    }}
+  >
+    P
+  </span>
+  ROGRESS.
+
+  <br />
+
+  <span
+    className="text-[#C1121F] inline-block animate-pulse"
+    style={{
+      animationDelay: ".6s",
+      textShadow:
+        "0 0 8px #ff2d2d, 0 0 18px #ff2d2d, 0 0 40px rgba(255,0,0,.7)",
+    }}
+  >
+    T
+  </span>
+  RANSFORM.
+
+</h1>
 
         {/* Subheading */}
         <p
