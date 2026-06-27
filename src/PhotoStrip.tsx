@@ -1,13 +1,13 @@
 export default function PhotoStrip() {
   const images = [
-    "https://images.unsplash.com/photo-1549719386-74dfcbf7dbed?auto=format&fit=crop&w=900&q=80",
-    "https://images.unsplash.com/photo-1517438984742-1262db08379e?auto=format&fit=crop&w=900&q=80",
-    "https://images.unsplash.com/photo-1517838277536-f5f99be501cd?auto=format&fit=crop&w=900&q=80",
-    "https://images.unsplash.com/photo-1518611012118-696072aa579a?auto=format&fit=crop&w=900&q=80",
-    "https://images.unsplash.com/photo-1571019614242-c5c5dee9f50b?auto=format&fit=crop&w=900&q=80",
-    "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=900&q=80",
-    "https://images.unsplash.com/photo-1517963879433-6ad2b056d712?auto=format&fit=crop&w=900&q=80",
-    "https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=900&q=80"
+    "/10.png",
+  "/11.png",
+  "/12.png",
+  "/13.png",
+  "/14.png",
+  "/15.png",
+  "/16.png",
+  "/17.png",
   ];
 
   const photos = [...images, ...images];
