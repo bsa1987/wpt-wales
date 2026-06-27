@@ -23,16 +23,14 @@ export default function Hero() {
       {/* Top accent line */}
       <div className="absolute top-0 left-0 right-0 h-0.5 bg-gradient-to-r from-transparent via-[#C1121F] to-transparent z-10" />
 
-      {/* Content */}
-      <div className="relative z-10 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 text-center pt-20">
-        {/* Headline */}
-        <h1 className="font-heading text-6xl sm:text-7xl md:text-8xl lg:text-9xl text-white leading-none tracking-widest text-shadow-lg mb-6 animate-fade-up">
-          TRAIN HARD.
-          <br />
-          <span className="text-[#C1121F]">FIGHT SMART.</span>
-          <br />
-          BUILD CONFIDENCE.
-        </h1>
+      {/* Headline */}
+<h1 className="font-heading text-6xl sm:text-7xl md:text-8xl lg:text-9xl text-white leading-none tracking-widest text-shadow-lg mb-6 animate-fade-up">
+  <span className="text-[#C1121F] inline-block mr-2">W</span>ORK.
+  <br />
+  <span className="text-[#C1121F] inline-block mr-2">P</span>ROGRESS.
+  <br />
+  <span className="text-[#C1121F] inline-block mr-2">T</span>RANSFORM.
+</h1>
 
         {/* Subheading */}
         <p
