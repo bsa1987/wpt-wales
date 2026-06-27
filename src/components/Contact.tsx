@@ -148,7 +148,7 @@ export default function Contact() {
                 loading="lazy"
                 allowFullScreen
                 referrerPolicy="no-referrer-when-downgrade"
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2487.9!2d-3.9663!3d51.6214!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zNTHCsDM3JzE3LjAiTiAzwrA1Nyc1OC43Ilc!5e0!3m2!1sen!2suk!4v1700000000000!5m2!1sen!2suk"
+                src="https://www.google.com/maps?q=Weavers+Yard,+Approach+Road,+Manselton,+Swansea+SA5+8NL&output=embed"
               />
             </div>
           </div>
