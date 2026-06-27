@@ -2,11 +2,13 @@ import { useScrollFade } from '../hooks/useScrollFade'
 import EnquiryForm from './EnquiryForm'
 
 const OPENING_HOURS = [
-  { day: 'Monday', hours: '6:00pm – 8:30pm' },
-  { day: 'Tuesday', hours: '6:15pm – 7:15pm' },
-  { day: 'Wednesday', hours: '6:00pm – 8:30pm' },
-  { day: 'Thursday', hours: '6:15pm – 7:15pm' },
-  { day: 'Friday–Sunday', hours: 'Closed' },
+  { day: 'Monday', hours: '8:00am – 8:00pm' },
+  { day: 'Tuesday', hours: '8:00am – 8:00pm' },
+  { day: 'Wednesday', hours: '8:00am – 8:00pm' },
+  { day: 'Thursday', hours: '8:00am – 8:00pm' },
+  { day: 'Friday', hours: '8:00am – 8:00pm' },
+  { day: 'Saturday', hours: 'Closed' },
+  { day: 'Sunday', hours: 'Closed' },
 ]
 
 export default function Contact() {
