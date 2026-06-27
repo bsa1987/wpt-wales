@@ -157,7 +157,7 @@ function ClassCard({ name, ages, days, time, description, image, badge, refProp,
 
       <div className="bg-[#111111] border border-[#D4AF37]/30 rounded-xl p-3">
         <p className="text-white font-medium">
-          🥊 Private fighters training available by appointment.
+          Private fighters training available by appointment.
         </p>
       </div>
 
