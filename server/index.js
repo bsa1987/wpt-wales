@@ -97,6 +97,7 @@ app.post('/api/enquiry', async (req, res) => {
     ]
   });
 }
+});
 
 app.get('*', (_req, res) => {
   res.sendFile(path.join(__dirname, '../dist/index.html'))
