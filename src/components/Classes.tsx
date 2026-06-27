@@ -90,83 +90,156 @@ function ClassCard({ name, ages, days, time, description, image, badge, refProp,
   </div>
 
   {name === 'Children & Adults Muay Thai' ? (
-    <div className="flex-1 space-y-4 mb-6">
+  <div className="flex-1 space-y-5 mb-6">
 
-      <div className="border-l-4 border-[#D4AF37] pl-4">
-        <p className="text-[#D4AF37] font-heading text-xl tracking-wider">
+    {/* AGE 4-7 */}
+    <div className="rounded-2xl border border-[#D4AF37]/40 bg-gradient-to-br from-[#1A1A1A] to-[#111111] p-5 hover:border-[#D4AF37] transition-all duration-300">
+
+      <div className="flex items-center justify-between mb-4">
+        <h4 className="font-heading text-2xl tracking-widest text-[#D4AF37]">
           AGE 4–7
-        </p>
-        <p className="text-white font-semibold">
-          5:30pm – 6:15pm
-        </p>
-        <p className="text-[#C1121F] font-bold text-lg">
-          £4.50
-          <span className="text-white/80 text-sm font-normal">
-            {" "}per class
-          </span>
-        </p>
-        <p className="text-white/80">
-          or
-          <span className="text-[#D4AF37] font-semibold">
-            {" "}£30 monthly
-          </span>
-        </p>
+        </h4>
+
+        <span className="bg-[#C1121F] text-white text-xs uppercase tracking-widest px-3 py-1 rounded-full">
+          Kids
+        </span>
       </div>
 
-      <div className="border-l-4 border-[#D4AF37] pl-4">
-        <p className="text-[#D4AF37] font-heading text-xl tracking-wider">
-          AGE 8–14
-        </p>
-        <p className="text-white font-semibold">
-          6:15pm – 7:15pm
-        </p>
-        <p className="text-[#C1121F] font-bold text-lg">
-          £4.50
-          <span className="text-white/80 text-sm font-normal">
-            {" "}per class
-          </span>
-        </p>
-        <p className="text-white/80">
-          or
-          <span className="text-[#D4AF37] font-semibold">
-            {" "}£30 monthly
-          </span>
-        </p>
-      </div>
+      <div className="grid grid-cols-2 gap-4">
 
-      <div className="border-l-4 border-[#D4AF37] pl-4">
-        <p className="text-[#D4AF37] font-heading text-xl tracking-wider">
-          ADULTS
-        </p>
-        <p className="text-white font-semibold">
-          7:15pm – 8:30pm
-        </p>
-        <p className="text-[#C1121F] font-bold text-lg">
-          £5.50
-          <span className="text-white/80 text-sm font-normal">
-            {" "}per class
-          </span>
-        </p>
-        <p className="text-white/80">
-          or
-          <span className="text-[#D4AF37] font-semibold">
-            {" "}£40 monthly
-          </span>
-        </p>
-      </div>
+        <div>
+          <p className="text-white font-semibold text-lg">
+            5:30pm – 6:15pm
+          </p>
 
-      <div className="bg-[#111111] border border-[#D4AF37]/30 rounded-xl p-3">
-        <p className="text-white font-medium">
-          Private fighters training available by appointment.
-        </p>
+          <p className="text-white/60 text-sm mt-1">
+            Monday & Wednesday
+          </p>
+        </div>
+
+        <div className="text-right">
+          <p className="font-heading text-4xl text-[#C1121F] leading-none">
+            £4.50
+          </p>
+
+          <p className="text-white/70 text-sm">
+            per class
+          </p>
+
+          <p className="text-[#D4AF37] font-semibold mt-2">
+            £30 / month
+          </p>
+        </div>
+
       </div>
 
     </div>
-  ) : (
-    <p className="text-white/80 leading-relaxed mb-6 flex-1">
-      {description}
-    </p>
-  )}
+
+    {/* AGE 8-14 */}
+    <div className="rounded-2xl border border-[#D4AF37]/40 bg-gradient-to-br from-[#1A1A1A] to-[#111111] p-5 hover:border-[#D4AF37] transition-all duration-300">
+
+      <div className="flex items-center justify-between mb-4">
+        <h4 className="font-heading text-2xl tracking-widest text-[#D4AF37]">
+          AGE 8–14
+        </h4>
+
+        <span className="bg-[#C1121F] text-white text-xs uppercase tracking-widest px-3 py-1 rounded-full">
+          Juniors
+        </span>
+      </div>
+
+      <div className="grid grid-cols-2 gap-4">
+
+        <div>
+          <p className="text-white font-semibold text-lg">
+            6:15pm – 7:15pm
+          </p>
+
+          <p className="text-white/60 text-sm mt-1">
+            Monday & Wednesday
+          </p>
+        </div>
+
+        <div className="text-right">
+          <p className="font-heading text-4xl text-[#C1121F] leading-none">
+            £4.50
+          </p>
+
+          <p className="text-white/70 text-sm">
+            per class
+          </p>
+
+          <p className="text-[#D4AF37] font-semibold mt-2">
+            £30 / month
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+    {/* ADULTS */}
+    <div className="rounded-2xl border border-[#D4AF37]/40 bg-gradient-to-br from-[#1A1A1A] to-[#111111] p-5 hover:border-[#D4AF37] transition-all duration-300">
+
+      <div className="flex items-center justify-between mb-4">
+        <h4 className="font-heading text-2xl tracking-widest text-[#D4AF37]">
+          ADULTS
+        </h4>
+
+        <span className="bg-[#C1121F] text-white text-xs uppercase tracking-widest px-3 py-1 rounded-full">
+          16+
+        </span>
+      </div>
+
+      <div className="grid grid-cols-2 gap-4">
+
+        <div>
+          <p className="text-white font-semibold text-lg">
+            7:15pm – 8:30pm
+          </p>
+
+          <p className="text-white/60 text-sm mt-1">
+            Monday & Wednesday
+          </p>
+        </div>
+
+        <div className="text-right">
+          <p className="font-heading text-4xl text-[#C1121F] leading-none">
+            £5.50
+          </p>
+
+          <p className="text-white/70 text-sm">
+            per class
+          </p>
+
+          <p className="text-[#D4AF37] font-semibold mt-2">
+            £40 / month
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+
+    {/* PRIVATE TRAINING */}
+    <div className="rounded-2xl border border-[#D4AF37]/40 bg-[#151515] p-5 text-center">
+
+      <p className="font-heading text-2xl tracking-widest text-[#D4AF37] mb-2">
+        PRIVATE FIGHTER TRAINING
+      </p>
+
+      <p className="text-white/90">
+        Available by appointment.
+      </p>
+
+    </div>
+
+  </div>
+) : (
+  <p className="text-white/80 leading-relaxed mb-6 flex-1">
+    {description}
+  </p>
+)}
 
   <button
     onClick={scrollToContact}
