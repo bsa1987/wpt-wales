@@ -63,7 +63,11 @@ function ClassCard({ name, ages, days, time, description, image, badge, refProp,
           </div>
         </div>
 
-        <p className="text-white/60 text-sm leading-relaxed mb-6 flex-1">{description}</p>
+        <p
+  className="text-white/60 text-sm leading-relaxed mb-6 flex-1 whitespace-pre-line"
+>
+  {description}
+</p>
 
         <button
           onClick={scrollToContact}
@@ -78,34 +82,36 @@ function ClassCard({ name, ages, days, time, description, image, badge, refProp,
 
 const CLASSES = [
   {
-    name: 'Kids Muay Thai',
-    ages: '4–13',
+    name: 'Children & Adults Muay Thai',
+    ages: '4+',
     days: 'Monday & Wednesday',
-    time: '6:00pm – 7:00pm',
-    description: 'Build confidence, discipline and fitness in a safe, fun environment. Our kids\' Muay Thai programme develops focus and respect alongside physical skills.',
+    time: '5:30pm – 8:30pm',
+    description:
+      `Age 4–7: 5:30pm–6:15pm (£4.50 per class or £30 monthly)
+
+Age 8–14: 6:15pm–7:15pm (£4.50 per class or £30 monthly)
+
+Adults: 7:15pm–8:30pm (£5.50 per class or £40 monthly)
+
+Private fighters training available by appointment.`,
     image: 'https://images.pexels.com/photos/8612013/pexels-photo-8612013.jpeg?auto=compress&cs=tinysrgb&w=800&q=80',
-    badge: 'Ages 4–13',
-  },
-  {
-    name: 'Adults Muay Thai',
-    days: 'Monday & Wednesday',
-    time: '7:15pm – 8:30pm',
-    description: 'Authentic Muay Thai technique covering strikes, clinch work, footwork and combinations. Suitable for beginners through to competition-level fighters.',
-    image: 'https://images.pexels.com/photos/7045557/pexels-photo-7045557.jpeg?auto=compress&cs=tinysrgb&w=800&q=80',
+    badge: 'Most Popular',
   },
   {
     name: 'Thai Fitness Blast',
     days: 'Tuesday & Thursday',
     time: '6:15pm – 7:15pm',
-    description: 'High-energy fitness class using Muay Thai techniques. Suitable for all abilities — no sparring required. Perfect for weight loss and cardiovascular health.',
+    description:
+      'High-energy fitness sessions using Muay Thai techniques. Perfect for weight loss, fitness and conditioning. Suitable for all abilities.',
     image: 'https://images.pexels.com/photos/6295855/pexels-photo-6295855.jpeg?auto=compress&cs=tinysrgb&w=800&q=80',
     badge: 'All Abilities',
   },
   {
-    name: 'One-to-One Coaching',
+    name: 'Private Coaching',
     days: 'By Appointment',
     time: 'Flexible',
-    description: 'Accelerate your progress with private coaching sessions tailored entirely to your goals — technique refinement, competition prep or personal development.',
+    description:
+      'One-to-one coaching tailored to your goals including beginners, fitness, competition preparation and technical improvement.',
     image: 'https://images.pexels.com/photos/6295859/pexels-photo-6295859.jpeg?auto=compress&cs=tinysrgb&w=800&q=80',
     badge: 'Private',
   },
@@ -131,7 +137,7 @@ export default function Classes() {
           </p>
         </div>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
           {CLASSES.map((cls, i) => (
             <ClassCard
               key={cls.name}
