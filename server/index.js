@@ -84,10 +84,19 @@ app.post('/api/enquiry', async (req, res) => {
 
     res.json({ success: true, message: 'Enquiry sent successfully.' })
   } catch (err) {
-    console.error('Email send error:', err)
-    res.status(500).json({ success: false, errors: ['Failed to send enquiry. Please try again or contact us directly.'] })
-  }
-})
+  console.error("==================================");
+  console.error("EMAIL SEND ERROR");
+  console.error(err);
+  console.error(JSON.stringify(err, null, 2));
+  console.error("==================================");
+
+  res.status(500).json({
+    success: false,
+    errors: [
+      "Failed to send enquiry. Please try again or contact us directly."
+    ]
+  });
+}
 
 app.get('*', (_req, res) => {
   res.sendFile(path.join(__dirname, '../dist/index.html'))
