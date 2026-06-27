@@ -2,7 +2,7 @@ import './index.css'
 
 import Nav from './components/Nav'
 import Hero from './components/Hero'
-import PhotoStrip from './components/PhotoStrip'
+import PhotoStrip from './PhotoStrip'
 import About from './components/About'
 import WhyChoose from './components/WhyChoose'
 import Classes from './components/Classes'
