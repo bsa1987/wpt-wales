@@ -5,14 +5,14 @@ const COACHES = [
     name: 'David Johnson',
     title: 'Head Coach',
     bio: 'David is WPT Wales\' founding coach with years of competitive Muay Thai experience. His passion for the sport and talent for instruction have built one of Swansea\'s most respected training academies. David is dedicated to developing every student — from nervous beginners to championship contenders.',
-    image: 'https://images.pexels.com/photos/4761422/pexels-photo-4761422.jpeg?auto=compress&cs=tinysrgb&w=600&q=80',
+    image: '/man.png',
     specialisms: ['Muay Thai', 'Competition Prep', 'Technique'],
   },
   {
     name: 'Ashleigh Johnson',
     title: 'Instructor',
     bio: 'Ashleigh brings energy, expertise and a warm coaching style that makes every student feel welcome. She leads the Kids Muay Thai programme and Thai Fitness Blast sessions, combining technical precision with fun and encouragement to bring out the best in every student.',
-    image: 'https://images.pexels.com/photos/6295863/pexels-photo-6295863.jpeg?auto=compress&cs=tinysrgb&w=600&q=80',
+    image: '/woman.png',
     specialisms: ['Kids Classes', 'Thai Fitness', 'Beginners'],
   },
 ]
