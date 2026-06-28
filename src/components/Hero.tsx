@@ -31,11 +31,9 @@ export default function Hero() {
 <h1 className="font-heading text-6xl sm:text-7xl md:text-8xl lg:text-[9rem] text-white leading-none tracking-widest text-shadow-lg mb-6 animate-fade-up">
 
   <span className="wpt-letter">W</span>ORK.
-
   <br />
 
   <span className="wpt-letter">P</span>ROGRESS.
-
   <br />
 
   <span className="wpt-letter">T</span>RANSFORM.
