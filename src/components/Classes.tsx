@@ -266,7 +266,7 @@ Age 8–14: 6:15pm–7:15pm (£4.50 per class or £30 monthly)
 Adults: 7:15pm–8:30pm (£5.50 per class or £40 monthly)
 
 Private fighters training available by appointment.`,
-    image: 'https://images.pexels.com/photos/8612013/pexels-photo-8612013.jpeg?auto=compress&cs=tinysrgb&w=800&q=80',
+    image: '/16.png',
     badge: 'Most Popular',
   },
   {
@@ -275,7 +275,7 @@ Private fighters training available by appointment.`,
     time: '6:15pm – 7:15pm',
     description:
       'High-energy fitness sessions using Muay Thai techniques. Perfect for weight loss, fitness and conditioning. Suitable for all abilities.',
-    image: 'https://images.pexels.com/photos/6295855/pexels-photo-6295855.jpeg?auto=compress&cs=tinysrgb&w=800&q=80',
+    image: '/11.png',
     badge: 'All Abilities',
   },
   {
@@ -284,7 +284,7 @@ Private fighters training available by appointment.`,
     time: 'Flexible',
     description:
       'One-to-one coaching tailored to your goals including beginners, fitness, competition preparation and technical improvement.',
-    image: 'https://images.pexels.com/photos/6295859/pexels-photo-6295859.jpeg?auto=compress&cs=tinysrgb&w=800&q=80',
+    image: '/13.png',
     badge: 'Private',
   },
 ]
