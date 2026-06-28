@@ -147,15 +147,19 @@
 ========================================== */
 
 .wpt-letter{
-  color:#ff1e1e;
+  color:#ff2020;
   display:inline-block;
   margin-right:4px;
 
   text-shadow:
-    0 0 8px #ff4a4a,
-    0 0 18px #ff3b3b,
-    0 0 36px rgba(255,0,0,.8),
-    0 0 70px rgba(255,0,0,.55);
+    0 0 10px #ffffff,
+    0 0 20px rgba(255,255,255,.95),
+    0 0 35px rgba(255,255,255,.75),
+    0 0 45px #ff6666,
+    0 0 70px #ff3333,
+    0 0 120px rgba(255,0,0,.7);
 
-  filter: drop-shadow(0 0 18px rgba(255,40,40,.7));
+  filter:
+    drop-shadow(0 0 12px rgba(255,255,255,.45))
+    drop-shadow(0 0 35px rgba(255,40,40,.6));
 }
